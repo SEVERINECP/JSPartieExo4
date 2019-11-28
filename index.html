@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>JSPartie1Exo4</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+        <div>
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        <div>
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname"/>
+        </div>
+        <div>
+            <label for="city">Ville :</label>
+            <input type="text" id="city" name="city"/>
+        </div>
+          <button type="submit" name="submitIdentity" value="Valider" onclick="dataCollect()">valider</button>
+      </form>
+        <script type="text/javascript">
+          function dataCollect(){
+            var firstname = document.getElementById('firstname').value;
+            var lastname = document.getElementById('lastname').value;
+            var city = document.getElementById('city').value;
+            alert('Nom:' + lastname + '\nPrénom:' + firstname + '\nVille:' + city);
+          }
+      </script>
+  </body>
+</html>
